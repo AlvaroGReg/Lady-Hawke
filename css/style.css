@@ -1,0 +1,91 @@
+
+/*COLORS*/
+
+:root{
+    --background-color: #000;
+    --font-color: #fff;
+    --background-color-soft: #383838;
+
+    --primary-color: #ff00ee;
+    --color-accent: #ff71f6;
+}
+
+/*REUSABLE*/
+
+p{
+    color: var(--font-color);
+}
+
+/*HEADER*/
+
+.headerbox{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.headerimg{
+    width: 30%;
+}
+
+.menuoptions{
+    display: flex;
+    list-style-type: none;
+}
+
+.menuitemtxt{
+    margin-right: .5rem;
+}
+
+.menuitem{
+    display: flex;
+}
+
+.actoritem:hover{
+    cursor: pointer;
+}
+
+.playicon{
+    size: 5rem;
+}
+
+/*BODY*/
+
+.bodyindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color);
+}
+
+.mainbody{
+    background: linear-gradient(90deg, var(--background-color) 0%, var(--background-color-soft) 51%, var(--background-color) 100%);
+    width: 80%;
+    height: 86vh;
+}
+
+.framemain{
+    width: 80%;
+    align-self: center;
+}
+
+/*DROPABLE*/
+
+.dropreparto{
+    display: none;
+    position: absolute;
+    background-color: var(--background-color-soft);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropreparto{
+    display: block;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}

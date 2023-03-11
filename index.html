@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Hawke</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bodyindex">
+
+    <header class="headerbox">
+        <img class="headerimg" src="res/logo_ladyhawke.png" alt="Lady Hawke">
+
+        <ul class="menuoptions">
+
+            <!--DROP MENU-->
+            
+            <li class="menuitem">
+            <div class="dropdown">
+
+                <p class="menuitemtxt">Reparto <i class="dropdownicon" data-feather="chevrons-down"></i></p>
+
+                <div class="dropreparto">
+                    <ul class="actormenu">
+                 
+                            <li class="actoritem" id="btn_broderick">
+                                <p class="actortxt"> Matthew Broderick</p>
+                            </li>
+                   
+                            <li class="actoritem" id="btn_hauer">
+                                <p class="actortxt">Rutger Hauer</p>
+                            </li>
+                 
+                            <li class="actoritem" id="btn_pfeiffer">
+                                <p class="actortxt">Michelle Pfeiffer</p>
+                            </li>
+                        
+                 
+                            <li class="actoritem" id="btn_wood">
+                                <p class="actortxt">John Wood</p>
+                            </li>
+                       
+                            <li class="actoritem" id="btn_mckern">
+                                <p class="actortxt">Leo McKern</p>
+                            </li>
+                    
+                    </ul>
+                </div>
+            </div>
+            
+            </li>
+
+            <a href="nested/director.html" target="framemain">
+                <li class="menuitem">
+                    <p class="menuitemtxt">Dirección</p>
+                </li>
+            </a>
+            <a href="nested/bso.html" target="framemain">
+                <li class="menuitem">
+                    <p class="menuitemtxt">BSO</p>
+                </li>
+            </a>
+            <a href="nested/others.html" target="framemain">
+                <li class="menuitem">
+                    <p class="menuitemtxt">Otros</p>
+                </li>
+            </a>
+            <a href="nested/watch.html" target="framemain">
+                <li class="menuitem"><i class="playicon" data-feather="play-circle"></i>
+                    <p class="menuitemtxt">Ver Película</p>
+                </li>
+            </a>
+        </ul>
+    </header>
+
+    <section class="mainbody">
+
+        <iframe name="framemain" src="" frameborder="0"></iframe>
+
+    </section>
+
+</body>
+<script>
+    feather.replace()
+</script>
+<script src="js/actors.js"></script>
+</html>
