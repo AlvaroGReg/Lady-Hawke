@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <p>DIRECTION</p>
+
+    <div class="upperframe">
+        <div class="photoframe">
+            <img src="" class="actor_portrait" id="director_portrait" alt="">
+        </div>
+        <div class="textframe">
+            <p class="actor_text_name" id="director_text_name"></p>
+            <p class="actor_text_born" id="director_text_borndate"></p>
+            <p class="actor_text_nationality" id="director_text_nationality"></p>
+            <p class="actor_text_films" id="director_text_films"></p>
+
+        </div>
+    </div>
+
+    <div class="biodivframe">
+        <p class="actor_text_data" id="director_text_data"></p>
+    </div>
 </body>
+<script src="../js/actors_data.js"></script>
+<script>
+
+    const indexById = (element) => element.id == "director"
+
+    let director = actorsList[actorsList.findIndex(indexById)]
+
+    console.log(director)
+
+    document.getElementById("director_text_name").innerHTML = director.name
+    document.getElementById("director_portrait").src = director.portrait
+    document.getElementById("director_text_data").innerHTML = director.data1
+    document.getElementById("director_text_borndate").innerHTML = "Vida: " + director.born_date + " - " + director.death
+    document.getElementById("director_text_nationality").innerHTML = director.nationality
+    document.getElementById("director_text_films").innerHTML = "Peliculas famosas: " + director.known_as[0] + ", " + director.known_as[1] + ", " + director.known_as[2] + "."
+
+</script>
+
 </html>

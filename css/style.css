@@ -80,6 +80,10 @@ a {
     width: 100%;
 }
 
+.actoritem:hover {
+    cursor: pointer;
+}
+
 .icondown {
     color: var(--font-color);
     size: 2rem;

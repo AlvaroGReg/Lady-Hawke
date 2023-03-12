@@ -32,5 +32,18 @@
     </div>
 </body>
 <script src="../js/actors_data.js"></script>
+<script>
+    const indexById = (element) => element.id == window.localStorage.getItem("actor_id")
+
+    let actor = actorsList[actorsList.findIndex(indexById)]
+
+
+    document.getElementById("actor_text_name").innerHTML = actor.name
+    document.getElementById("actor_portrait").src = actor.portrait
+    document.getElementById("actor_text_data").innerHTML = actor.data1
+    document.getElementById("actor_text_borndate").innerHTML = "Vida: " + actor.born_date + " - " + actor.death
+    document.getElementById("actor_text_nationality").innerHTML = actor.nationality
+    document.getElementById("actor_text_films").innerHTML = "Peliculas famosas: " + actor.known_as[0] + ", " + actor.known_as[1] + ", " + actor.known_as[2] + "."
+</script>
 
 </html>
