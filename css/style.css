@@ -1,16 +1,23 @@
 /*COLORS*/
 
 :root {
-    --background-color: #000;
-    --font-color: #fff;
-    --background-color-soft: #383838;
+ 
+    --background-color: #0C3B2E;
+    --background-color-soft: #BB8A52;
 
-    --slices-color: #00000069;
-    --scroll-bar-hover: #4e4e4e;
+    --font-color: #ffffff;
 
-    --primary-color: #ff00ee;
-    --color-accent: #ff71f6;
-    --color-play: #fff;
+    --barra: #0C3B2E;
+    --slices-color: #eeb46277;
+    --scroll-bar-hover: #ad814e;
+
+    --primary-color: #f11e53;
+    --color-accent: #f11e53;
+    --color-play: #f71616;
+
+    --color1: #0C3B2E;
+    --color2: #e9bb7c;
+    --color3: #f11e53;
 }
 
 /*REUSABLE*/
@@ -42,6 +49,7 @@ a {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    background-color: var(--barra);
 }
 
 .headerimg {
@@ -59,16 +67,25 @@ a {
     vertical-align: middle;
 }
 
+
 .menuitemtxt {
     display: block;
     display: table-cell;
     font-size: 1.2rem;
 }
 
+.menuitemtxt:hover{
+    color: var(--color3);
+}
+
 .container_txticon {
     display: table;
     position: relative;
     color: var(--font-color)
+}
+
+.container_txticon:hover{
+    color: var(--color3);
 }
 
 .playicon {
@@ -84,8 +101,32 @@ a {
     flex-direction: column;
 }
 
+.broderickitem{
+ background-color: var(--color1);
+}
+
+.haueritem{
+ background-color: var(--color2);
+}
+
+.pfeifferitem{
+ background-color: var(--color1);
+}
+
+.wooditem{
+ background-color: var(--color2);
+}
+
+.mckernitem{
+ background-color: var(--color1);
+}
+
 .actortxt {
     margin-right: 2.5rem;
+}
+
+.actortxt:hover{
+    color: var(--color3);
 }
 
 .actoritem {
@@ -132,7 +173,8 @@ a {
 }
 
 .mainbody {
-    background: linear-gradient(90deg, var(--background-color) 0%, var(--background-color-soft) 51%, var(--background-color) 100%);
+
+background: radial-gradient(circle, var(--background-color-soft) 0%, var(--background-color) 97%);
     width: 80%;
     height: 86vh;
 }

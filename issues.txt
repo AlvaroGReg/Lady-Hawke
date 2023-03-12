@@ -1,0 +1,5 @@
+-cambiar fondo negro Ladyhawke a tono #0C3B2E
+-boton reparto no se pone rosa el simbolo check de al lado AHORA si pero por separado juntalo
+
+-se desplaza la web al usar los slices
+-barra reparto vertical a la izquierda sin uso quitala xdios
