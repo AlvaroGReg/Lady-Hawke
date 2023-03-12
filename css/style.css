@@ -5,6 +5,8 @@
     --font-color: #fff;
     --background-color-soft: #383838;
 
+    --slices-color: #00000069;
+
     --primary-color: #ff00ee;
     --color-accent: #ff71f6;
     --color-play: #fff;
@@ -187,7 +189,7 @@ a {
 
 .actor_text_name {
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -206,3 +208,57 @@ a {
     font-size: .92rem;
     text-align: justify;
 }
+
+/*IMAGES GALLERY*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .albumcontainer {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .galleryimage{
+    width: 100%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+
+    margin-top: 20%;
+
+    width: 2.5rem;
+    height: 4rem;
+    padding: 1rem;
+    color: var(--font-color);
+    background-color: var(--slices-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 5px 5px 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: var(--background-color)
+  }

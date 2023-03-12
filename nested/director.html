@@ -27,6 +27,40 @@
     <div class="biodivframe">
         <p class="actor_text_data" id="director_text_data"></p>
     </div>
+
+        <!-- IMAGE GALLERY -->
+<div class="albumcontainer">
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="mySlides">
+        <img src="" class="galleryimage" id="gallery0">
+    </div>
+  
+    <div class="mySlides">
+        <img src="" class="galleryimage" id="gallery1">
+    </div>
+  
+    <div class="mySlides">
+        <img src="" class="galleryimage" id="gallery2">
+    </div>
+  
+    <div class="mySlides">
+        <img src="" class="galleryimage" id="gallery3">
+    </div>
+  
+    <div class="mySlides">
+        <img src="" class="galleryimage" id="gallery4">
+    </div>
+  
+    <div class="mySlides">
+        <img src="" class="galleryimage" id="gallery5">
+    </div>
+  
+</div>
+
 </body>
 <script src="../js/actors_data.js"></script>
 <script>
@@ -35,15 +69,19 @@
 
     let director = actorsList[actorsList.findIndex(indexById)]
 
-    console.log(director)
-
-    document.getElementById("director_text_name").innerHTML = director.name
     document.getElementById("director_portrait").src = director.portrait
+    document.getElementById("director_text_name").innerHTML = director.name
     document.getElementById("director_text_data").innerHTML = director.data1
     document.getElementById("director_text_borndate").innerHTML = "Vida: " + director.born_date + " - " + director.death
     document.getElementById("director_text_nationality").innerHTML = director.nationality
     document.getElementById("director_text_films").innerHTML = "Peliculas famosas: " + director.known_as[0] + ", " + director.known_as[1] + ", " + director.known_as[2] + "."
 
-</script>
 
+    for(let n=0; n<director.photography.length; n++){
+    
+        document.getElementById("gallery"+n).src = director.photography[n]
+    }
+    
+</script>
+<script src="../js/album.js"></script>
 </html>
