@@ -133,6 +133,44 @@ a {
     align-self: center;
 }
 
+/*INTRO*/
+
+.introheader{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.introheaderimg{
+    width: 60%;
+
+}
+
+.intromainbody{
+    width: 80%;
+    display: flex;
+
+}
+
+.introtextbody{
+    display: flex;
+    flex-direction: column;
+}
+
+.introtext{
+
+}
+
+.embedtrailer{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.introimage{
+    width: 15%;
+}
 /*ALLACTORS*/
 
 .cards_container {

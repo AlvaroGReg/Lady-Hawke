@@ -13,7 +13,7 @@
 
     <div class="cards_container">
 
-    <div class="cardviewactors" id="btn_broderick">
+    <div class="cardviewactors" name="btn_broderick">
 
         <img src="../res/portrait-broderick.jpg" class="allactorsportrait" alt="Broderick Portrait">
 
@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="cardviewactors">
+    <div class="cardviewactors" name="btn_hauer">
 
         <img src="../res/portrait-hauer.jpg" class="allactorsportrait" alt="Rutger Hauer">
 
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class="cardviewactors">
+    <div class="cardviewactors" name="btn_pfeiffer">
 
         <img src="../res/portrait-pfeiffer.jpg" class="allactorsportrait" alt="Michelle Pfeiffer">
 
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="cardviewactors">
+    <div class="cardviewactors" name="btn_wood">
 
         <img src="../res/portrait-wood.jpg" class="allactorsportrait" alt="John Wood">
 
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="cardviewactors">
+    <div class="cardviewactors" name="btn_mckern">
 
         <img src="../res/portrait-mckern.webp" class="allactorsportrait" alt="Leo Mckern">
 
@@ -64,5 +64,20 @@
     </div>
 </div>
 </body>
+<script>
+window.onload = function(){
 
+const buttons = document.querySelectorAll(".cardviewactors");
+
+buttons.forEach(button=>{
+    button.addEventListener("click",()=>{
+
+        window.localStorage.setItem("actor_id",button.getAttribute("name"))
+
+        //document.parentElement.getElementById("framemain").src = "actor.html"
+
+    })
+});
+}
+</script>
 </html>
