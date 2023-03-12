@@ -6,6 +6,7 @@
     --background-color-soft: #383838;
 
     --slices-color: #00000069;
+    --scroll-bar-hover: #4e4e4e;
 
     --primary-color: #ff00ee;
     --color-accent: #ff71f6;
@@ -20,6 +21,15 @@ p {
     font-weight: 400;
     font-family: 'Segoe UI';
 
+}
+
+h1,
+h2,
+h3 {
+    color: var(--font-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI';
 }
 
 a {
@@ -135,42 +145,41 @@ a {
 
 /*INTRO*/
 
-.introheader{
+.introheader {
     margin: auto;
     width: 75%;
     display: flex;
     justify-content: center;
 }
 
-.introheaderimg{
+.introheaderimg {
     width: 60%;
 
 }
 
-.intromainbody{
+.intromainbody {
     width: 80%;
     display: flex;
 
 }
 
-.introtextbody{
+.introtextbody {
     display: flex;
     flex-direction: column;
 }
 
-.introtext{
+.introtext {}
 
-}
-
-.embedtrailer{
+.embedtrailer {
     margin: auto;
     width: 50%;
     height: auto;
 }
 
-.introimage{
+.introimage {
     width: 15%;
 }
+
 /*ALLACTORS*/
 
 .cards_container {
@@ -251,27 +260,27 @@ a {
 
 * {
     box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .albumcontainer {
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.albumcontainer {
     position: relative;
     width: 60%;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+}
 
-  .galleryimage{
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.galleryimage {
     width: 100%;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
 
@@ -287,16 +296,101 @@ a {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 5px 5px 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: var(--background-color)
-  }
+}
+
+/*BSO*/
+
+.bsoheader {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.bsoheaderimg {
+    width: 60%;
+}
+
+.bsocompositorbody {
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 50%;
+}
+
+.compositortextbody {
+    text-align: justify;
+    padding: 1rem;
+}
+
+.bsotitle {}
+
+.bsotext {}
+
+.bsoimg {
+    width: 35%;
+}
+
+.powellimg {}
+
+.cintaimg {}
+
+.bsovideocontainer {
+    width: fit-content;
+    margin: auto;
+}
+
+.bsoembedvideo {
+    width: 40rem;
+    height: 30rem;
+}
+
+.bsocriticsbody {
+
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 50%;
+}
+
+.criticstextbody {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.bsotitle {}
+
+/*SCROLL BAR*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-color-soft);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--font-color);
+}
